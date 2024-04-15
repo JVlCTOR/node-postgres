@@ -1,0 +1,49 @@
+GET http://[::1]:5000/produtos
+###
+
+GET http://[::1]:5000/produto/1
+###
+
+POST http://[::1]:5000/produto
+Content-Type: application/json
+
+{
+    "id": 5,
+    "nome": "Produto Teste 4",
+    "descricao": "Descrição do produto teste 4",
+    "desconto": 0,
+    "preco": 199.99,
+    "ativo": false,
+    "categoria": "Teste 3",
+    "data_cadastro": "2024-03-19"
+}
+
+###
+
+PUT http://[::1]:5000/produto/1
+Content-Type: application/json
+
+{
+    "nome": "Produto Teste update 2",
+    "descricao": "Descrição do produto teste updated 2",
+    "desconto": 0,
+    "preco": 499.99,
+    "ativo": false,
+    "categoria": "Teste 3",
+    "data_cadastro": "2024-03-27"
+}
+
+###
+
+DELETE http://[::1]:5000/produto/1
+Content-Type: application/json
+
+{
+    "nome": "Produto Teste update",
+    "descricao": "Descrição do produto teste updated",
+    "desconto": 0,
+    "preco": 299.99,
+    "ativo": false,
+    "categoria": "Teste 3",
+    "data_cadastro": "2024-03-27"
+}
