@@ -27,12 +27,10 @@ produtosRoute(app)
 
 app.listen({  host: HOST,  port: `5000` }, (err, address) => {
     if (err) {
-        /* app.log.error(err);
-        process.exit(1); */
+
         console.log(`Erro ao rodar os ervidor: ${err}`);
         return;
     }
     app.log.info(`Server listening on ${address}`);
     console.log(`Server listening on ${address}`);
-    //console.log(`Server listening on http://${HOST}:${PORT}`);
 });
